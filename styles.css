@@ -1,117 +1,251 @@
-* {
-  box-sizing: border-box;
+html, body {
+    font-size: 18px;
+    color: #6c767d;
+    background-color: #ebf1f5;
+    background-image: url("https://bu.dusays.com/2022/06/04/629b0a2a89425.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
-body {
-  margin: 0;
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+    width: 5px;
+    /* height: 5px; */
+    background-color: #F5F5F5;
 }
-*{
-  box-sizing:border-box;
+
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
 }
-body{
-  margin-top:0px;
-  margin-right:0px;
-  margin-bottom:0px;
-  margin-left:0px;
-  font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Roboto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
 }
-.logo path{
-  pointer-events:none;
-  fill:none;
-  stroke-linecap:round;
-  stroke-width:7;
-  stroke:rgb(255, 255, 255);
+#main .aplayer{
+    margin: 10px 0!important;
 }
-.wechat-group img{
-  max-width:220px;
-  height:auto;
-  border-top-left-radius:8px;
-  border-top-right-radius:8px;
-  border-bottom-right-radius:8px;
-  border-bottom-left-radius:8px;
-  margin-top:0px;
-  margin-right:auto;
-  margin-bottom:0px;
-  margin-left:auto;
-  width:100%;
+h1 {
+    font-size: 36px;
+    margin-bottom: .5em;
 }
-.welcome-img img{
-  width:100%;
+
+h2 {
+    font-size: 24px;
 }
-#header:not(.sticky-header) #logo a{
-  opacity:0;
-  pointer-events:none;
+
+h3 {
+    font-size: 20px;
+    margin-top: 1em;
 }
-.c19206{
-  font-size:52px;
-  letter-spacing:10px;
-  word-spacing:5px;
+
+h4 {
+    font-size: 16px;
 }
-.c19224{
-  color:#888;
-  letter-spacing:10px;
-  font-size:18px;
+
+h1,
+h2,
+h3,
+h4 {
+    color: black;
 }
-.c19242{
-  max-width:600px;
-  line-height:1.8;
-  color:#AAA;
+
+/* 视频背景 */
+.kz-video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-.c19174{
-  background-image:url('https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/one-page/images/page/1.jpg');
-  background-position:top center;
+
+.kz-video video {
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    width: auto;
+    height: auto;
 }
-.c19536{
-  max-width:700px;
-  font-size:40px;
+
+.card {
+    border: none;
+    padding: 50px 30px 0px;
+    border-radius: 0;
 }
-.c19554{
-  max-width:800px;
+
+.container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.c19572{
-  font-size:16px;
+
+.my-card {
+    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
 }
-.c19619{
-  max-width:1000px;
+
+strike {
+    color: red;
 }
-.c20336{
-  max-width:900px;
+
+.btn {
+    border-radius: 0;
+    margin: 5px 0;
+    width: 100%;
+    padding: 12px 40px;
+    transition: ease;
 }
-.c21630{
-  max-width:900px;
+
+.btn-primary {
+    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
+    padding: 12px 40px;
+    transition: ease;
 }
-.c21704{
-  background:url('https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/images/services/main-bg.jpg') center center no-repeat;
-  background-size:cover;
+
+.btn-primary:hover {
+    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
 }
-.c22228{
-  position:relative;
-  top:-3px;
+
+.btn-secondary {
+    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
+    padding: 12px 40px;
+    transition: ease;
 }
-.c22203{
-  max-width:900px;
+
+.btn-secondary:hover {
+    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
 }
-.c22289{
-  background-image:url('https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/one-page/images/page/testimonials.jpg');
-  padding:150px 0;
+
+.btn-success {
+    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
+    padding: 12px 40px;
+    transition: ease;
 }
-.c23686{
-  line-height:1.7;
+
+.btn-success:hover {
+    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
 }
-.c23767{
-  line-height:1.7;
+
+.social {
+    padding-left: 0;
 }
-.c23678{
-  font-size:16px;
-  line-height:1.7;
+
+.social p {
+    margin-bottom: 0;
 }
-.c23644{
-  background-color:#F5F5F5;
+
+.social li {
+    list-style: none;
+    float: left;
+    margin-right: 15px;
 }
-.c24292{
-  display:block;
-  font-size:13px;
-  margin-top:15px;
+
+.card-text {
+    margin-bottom: 20px;
 }
-.c24062{
-  max-width:850px;
+
+.social .fa {
+    font-size: 24px;
+}
+
+.photo-bg {
+    /* background-image: url(assets/background.jpg); */
+    background-image: url(https://tva1.sinaimg.cn/large/0072Vf1pgy1foxk456b0fj31hc0u0dxu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+#kaygb-blog-a,
+#kaygb-mail-a {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    body {
+        min-height: 600px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2,
+    .social .fa {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h4,
+    p {
+        font-size: 14px;
+    }
+    .card {
+        padding: 50px 50px 0px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .photo-bg {
+        min-height: calc(100vh - 500px);
+    }
+}
+
+@media(max-width:991px) {
+    .photo-bg {
+        background-position: top;
+        min-height: calc(90vh - 440px);
+    }
+}
+
+@media(max-width: 767px) {
+    .container {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+    }
+    .photo-bg {
+        height: 180px;
+    }
+    .card {
+        padding: 20px;
+    }
+    #kaygb-blog-a,
+    #kaygb-mail-a {
+        display: block;
+    }
+    #kaygb-blog,
+    #kaygb-mail {
+        display: none;
+    }
+}
+
+#frame {
+    width: 50%;
+    height: 50vh;
+    margin: 0;
+    background: #fff;
+    position: fixed;
+    z-index: 999;
+    top: 5%;
+    left: 5%;
+}
+
+#aplayer {
+    z-index: 20000000;
 }
